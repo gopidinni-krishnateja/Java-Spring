@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="student1" class="com.constructor.example.Student">
+            <constructor-arg type="java.lang.String" value="Teja" index="0"></constructor-arg>
+            <constructor-arg type="int" value="23" index="1"></constructor-arg>
+        </bean>
+    <bean id="student2" class="com.constructor.example.Student">
+        <constructor-arg type="int" value="2" index="0"></constructor-arg>
+        <constructor-arg type="java.lang.String" value="Krishna" index="1"></constructor-arg>
+        <constructor-arg type="int" value="24" index="2"></constructor-arg>
+        <constructor-arg type="double" value="93.4" index="3"></constructor-arg>
+    </bean>
+    <bean id="student" class="com.constructor.example.Student"></bean>
+
+</beans>

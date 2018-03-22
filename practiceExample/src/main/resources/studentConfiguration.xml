@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="person" class="com.example.collections.Person" scope="prototype" >
+            <property name="name" value="Krishna"></property>
+            <property name="age" value="23"></property>
+        </bean>
+        <bean id="student" class="com.example.collections.Student" parent="person" init-method="inIt" destroy-method="destroy">
+            <property name="id" value="1"></property>
+            <property name="englishMarks" value="83.5"></property>
+            <property name="physicsMarks" value="75.4"></property>
+            <property name="chemistryMarks" value="90.8"></property>
+            <property name="mathsMarks" value="67"></property>
+        </bean>
+        <bean id="student1" class="com.example.collections.Student" parent="person" init-method="inIt" destroy-method="destroy"></bean>
+</beans>
